@@ -307,7 +307,7 @@ TEMPLATE_WIZARD = r'''
                 <!-- PASSO 1 -->
                 <section class="wizard-panel" data-step="index">
                     <div class="hero-grid"><div class="hero-card">
-                        <span class="hero-pill">MOVIMENTA.RIO - CRISTIANE</span>
+                        <span class="hero-pill">MOVIMENTA.RIO</span>
                         <h1 class="hero-title">TRANSFORME SUA CARREIRA AGORA!</h1>
                         <p class="hero-subtitle">Conectando vida, transformando pessoas.</p>
                         <div class="hero-highlights">
