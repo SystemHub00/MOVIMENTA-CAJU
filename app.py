@@ -302,7 +302,7 @@ TEMPLATE_WIZARD = r"""<!DOCTYPE html>
                 <section class="wizard-panel" data-step="index">
                     <div class="hero-grid"><div class="hero-card">
                         <span class="hero-pill">PROJETO: MOVIMENTA RIO</span>
-                        <h1 class="hero-title">CURSOS GRATUITOS EM MAR&#201; I E II</h1>
+                        <h1 class="hero-title">CURSOS GRATUITOS EM CAJU</h1>
                         <p class="hero-subtitle">Programa Movimenta Rio &bull; Prefeitura do Rio de Janeiro. Garanta sua vaga e transforme sua carreira!</p>
                         <div class="hero-highlights">
                             <div class="hero-highlight" style="text-align:left;">
