@@ -29,61 +29,14 @@ VALID_DDDS = {
 }
 
 LOCAL_OPTIONS = [
-    {"id": "1",  "nome": "Residencial Rio Samba — Campo Grande"},
-    {"id": "2",  "nome": "Igreja Batista Rio da Prata — Bangu"},
-    {"id": "3",  "nome": "Associação dos Artesãos — Ana Gonzaga"},
-    {"id": "4",  "nome": "IMMEC Church — Campo Grande"},
-    {"id": "5",  "nome": "Min. Ap. Mover Profético — Senador Camará"},
-    {"id": "6",  "nome": "Assoc. Moradores Conj. Liberdade — Santa Cruz"},
-    {"id": "7",  "nome": "Igreja Batista São Bento — Bangu"},
-    {"id": "8",  "nome": "Ig. Metodista Embarcados C/Cristo — Campo Grande"},
-    {"id": "9",  "nome": "Reforço Escolar Tia Dani — Maré"},
-    {"id": "10", "nome": "Vila do Pinheiro — Maré"},
-    {"id": "11", "nome": "Min. Ap. Tenda do Encontro — Cosmos"},
-    {"id": "12", "nome": "Prefeitura — Centro"},
-    {"id": "13", "nome": "Salão de Festas (77) — Padre Miguel"},
-    {"id": "14", "nome": "Amubua (Associação) — Santa Cruz"},
-    {"id": "15", "nome": "Assoc. Amigos do Barata — Realengo"},
-    {"id": "16", "nome": "AD ADTS Mandela — Benfica"},
-    {"id": "17", "nome": "AD ADTS de Colégio — Colégio"},
-    {"id": "18", "nome": "Centro Social Estrela da Manhã — Guaratiba"},
-    {"id": "19", "nome": "Campo Socyte de Manguinhos — Manguinhos"},
-    {"id": "20", "nome": "Quadra Unidos de Manguinhos — Manguinhos"},
-    {"id": "21", "nome": "Igreja Batista Ebenezer — Inhoaíba"},
-    {"id": "22", "nome": "Assoc. de Moradores São Jorge — Inhoaíba"},
-    {"id": "23", "nome": "Ig. Evangélica Pão da Vida — Curicica"},
-    {"id": "24", "nome": "AD na Pavuna — Cosmos"},
-    {"id": "25", "nome": "Ig. Batista Maanaim Mendanha — Campo Grande"},
-    {"id": "26", "nome": "Salão de Festas — Santa Cruz"},
-    {"id": "27", "nome": "Centro Cultural Lottus — Méier"},
-    {"id": "28", "nome": "Vila Cruzeiro — Penha"},
-    {"id": "29", "nome": "Ig. União Evangélica Pentecostal — Cosmos"},
-    {"id": "30", "nome": "Tia Lu — Realengo"},
-    {"id": "31", "nome": "Cozinha Comunitária — Realengo"},
-    {"id": "32", "nome": "Casa Costa Matos — Rio de Janeiro"},
-    {"id": "33", "nome": "Foz do Jordão — Campo Grande"},
-    {"id": "34", "nome": "Col. Estadual Luiz Carlos Vila — Benfica"},
-    {"id": "35", "nome": "Cozinha Comunitária — Realengo (Gal. Raposo)"},
-    {"id": "36", "nome": "Assembléia de Deus ADAV — Sen. Augusto Vasconcelos"},
+    {"id": "1", "nome": "CAJU — SALA 01"},
 ]
 
 COURSE_CATALOG = [
-    {"id": "1",  "nome": "ASSISTENTE DE LOGÍSTICA"},
-    {"id": "2",  "nome": "AUXILIAR ADMINISTRATIVO"},
-    {"id": "3",  "nome": "AUXILIAR DE COZINHA"},
-    {"id": "4",  "nome": "INTELIGÊNCIA ARTIFICIAL"},
-    {"id": "5",  "nome": "MARKETING DIGITAL"},
-    {"id": "6",  "nome": "MONITOR DE LAZER E RECREAÇÃO"},
-    {"id": "7",  "nome": "OPERADOR DE SISTEMA DE COMPOSTAGEM E RESÍDUOS ORGÂNICOS"},
-    {"id": "8",  "nome": "PORTEIRO"},
-    {"id": "9",  "nome": "RECEPCIONISTA"},
-    {"id": "10", "nome": "AGENTE DE TURISMO CORPORATIVO"},
-    {"id": "11", "nome": "VENDEDOR"},
-    {"id": "12", "nome": "SOCIAL MEDIA"},
-    {"id": "13", "nome": "BARBEIRO"},
-    {"id": "14", "nome": "GARÇOM"},
-    {"id": "15", "nome": "ELETRICISTA PREDIAL"},
-    {"id": "16", "nome": "INVESTIDOR DO SUCESSO"},
+    {"id": "1", "nome": "ASSISTENTE DE LOGÍSTICA"},
+    {"id": "2", "nome": "MARKETING DIGITAL"},
+    {"id": "3", "nome": "SOCIAL MEDIA"},
+    {"id": "4", "nome": "AUXILIAR ADMINISTRATIVO"},
 ]
 
 ADDRESS_OPTIONS = {
@@ -91,126 +44,46 @@ ADDRESS_OPTIONS = {
 }
 
 
+ADDRESS_OPTIONS = {
+    "1": "📍Igreja Pentecostal Da Glória De Deus - Rua Carlos Seidl, nº 1306 - Caju (Em Frente A Praça da Ladeira dos Funcionários).",
+}
 TURMA_OPTIONS = [
-    {"id": "1",  "curso_id": "1",  "local_id": "1",  "turma_codigo": "26/ASLO 25",  "turma_label": "Sábado — 08h–12h (início 30/05/2026) — Residencial Rio Samba — Campo Grande",           "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "30/05/2026", "encerramento": "20/06/2026", "endereco_curso": "📍Rua Antonio Carlos Belchior, 200 – Mendanha – Campo Grande"},
-    {"id": "2",  "curso_id": "1",  "local_id": "2",  "turma_codigo": "26/ASLO 26",  "turma_label": "Segunda e Terça — 19h–21h30 (início 01/06/2026) — Igreja Batista Rio da Prata — Bangu",    "dias_aula": "Segunda e Terça", "horario": "19h–21h30",   "data_inicio": "01/06/2026", "encerramento": "23/06/2026", "endereco_curso": "📍Rua dos Limadores, 866 – Bangu"},
-    {"id": "3",  "curso_id": "1",  "local_id": "3",  "turma_codigo": "26/ASLO 27",  "turma_label": "Terça — 08h–12h (início 02/06/2026) — Associação dos Artesãos — Ana Gonzaga",     "dias_aula": "Terça",            "horario": "08h–12h",      "data_inicio": "02/06/2026", "encerramento": "23/06/2026", "endereco_curso": "📍Rua Esmeralda Ana Gonzaga QD 11 – Ana Gonzaga"},
-    {"id": "4",  "curso_id": "1",  "local_id": "4",  "turma_codigo": "FGM-AL-01",   "turma_label": "Sábado — 08h–12h (início 30/05/2026) — IMMEC Church — Campo Grande",                     "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "30/05/2026", "encerramento": "20/06/2026", "endereco_curso": "📍Estrada do Cabuçu, 2692 – Campo Grande"},
-    {"id": "5",  "curso_id": "2",  "local_id": "5",  "turma_codigo": "26/ADMN 41",  "turma_label": "Sábado — 08h–12h (início 06/06/2026) — Min. Ap. Mover Profético — Senador Camará",   "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "06/06/2026", "encerramento": "27/06/2026", "endereco_curso": "📍Rua Bom Guilherme Francisco Moraes, 03 – Senador Camará"},
-    {"id": "6",  "curso_id": "2",  "local_id": "6",  "turma_codigo": "26/ADMN 36",  "turma_label": "Sábado — 09h–13h (início 13/06/2026) — Assoc. Moradores Conj. Liberdade — Santa Cruz",    "dias_aula": "Sábado",           "horario": "09h–13h",      "data_inicio": "13/06/2026", "encerramento": "04/07/2026", "endereco_curso": "📍Av. Canal Margem Direita, 54 – Santa Cruz"},
-    {"id": "7",  "curso_id": "3",  "local_id": "5",  "turma_codigo": "26/AXCZ 19",  "turma_label": "Quarta e Sexta — 16h–18h (início 10/06/2026) — Min. Ap. Mover Profético — Senador Camará", "dias_aula": "Quarta e Sexta",    "horario": "16h–18h",      "data_inicio": "10/06/2026", "encerramento": "03/07/2026", "endereco_curso": "📍Rua Bom Guilherme Francisco Moraes, 03 – Senador Camará"},
-    {"id": "8",  "curso_id": "3",  "local_id": "3",  "turma_codigo": "26/AXCZ 20",  "turma_label": "Sábado — 14h–18h (início 06/06/2026) — Associação dos Artesãos — Ana Gonzaga",    "dias_aula": "Sábado",           "horario": "14h–18h",      "data_inicio": "06/06/2026", "encerramento": "27/06/2026", "endereco_curso": "📍Rua Esmeralda Ana Gonzaga QD 11 – Ana Gonzaga"},
-    {"id": "9",  "curso_id": "3",  "local_id": "4",  "turma_codigo": "FGM-AC-01",   "turma_label": "Sábado — 09h–13h (início 30/05/2026) — IMMEC Church — Campo Grande",                     "dias_aula": "Sábado",           "horario": "09h–13h",      "data_inicio": "30/05/2026", "encerramento": "20/06/2026", "endereco_curso": "📍Estrada do Cabuçu, 2692 – Campo Grande"},
-    {"id": "10", "curso_id": "4",  "local_id": "7",  "turma_codigo": "26/INAT 18",  "turma_label": "Sábado — 08h–12h (início 06/06/2026) — Igreja Batista São Bento — Bangu",              "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "06/06/2026", "encerramento": "27/06/2026", "endereco_curso": "📍Rua Batuíra, 121 – Bangu"},
-    {"id": "11", "curso_id": "4",  "local_id": "8",  "turma_codigo": "26/INAT 21",  "turma_label": "Sábado — 08h–12h (início 30/05/2026) — Ig. Metodista Embarcados C/Cristo — Campo Grande", "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "30/05/2026", "encerramento": "20/06/2026", "endereco_curso": "📍Est. do Cabuçu, 2692 – Campo Grande"},
-    {"id": "12", "curso_id": "4",  "local_id": "9",  "turma_codigo": "26/INAT 19",  "turma_label": "Sábado — 10h–14h (início 06/06/2026) — Reforço Escolar Tia Dani — Maré",           "dias_aula": "Sábado",           "horario": "10h–14h",      "data_inicio": "06/06/2026", "encerramento": "27/06/2026", "endereco_curso": "📍Rua Darcy Vargas, 136 – Maré"},
-    {"id": "13", "curso_id": "4",  "local_id": "3",  "turma_codigo": "26/INAT 20",  "turma_label": "Quarta — 08h–12h (início 03/06/2026) — Associação dos Artesãos — Ana Gonzaga",     "dias_aula": "Quarta",             "horario": "08h–12h",      "data_inicio": "03/06/2026", "encerramento": "24/06/2026", "endereco_curso": "📍Rua Esmeralda Ana Gonzaga QD 11 – Ana Gonzaga"},
-    {"id": "14", "curso_id": "5",  "local_id": "10", "turma_codigo": "26/MARK 26",  "turma_label": "Terça e Quinta — 19h–21h (início 02/06/2026) — Vila do Pinheiro — Maré",               "dias_aula": "Terça e Quinta",  "horario": "19h–21h",      "data_inicio": "02/06/2026", "encerramento": "30/06/2026", "endereco_curso": "📍Via B9, 379, Bloco 14 – Maré"},
-    {"id": "15", "curso_id": "5",  "local_id": "11", "turma_codigo": "26/MARK 29",  "turma_label": "Terça — 18h–22h (início 02/06/2026) — Min. Ap. Tenda do Encontro — Cosmos",              "dias_aula": "Terça",            "horario": "18h–22h",      "data_inicio": "02/06/2026", "encerramento": "23/06/2026", "endereco_curso": "📍Rua Framboesa, 21 – Cosmos"},
-    {"id": "16", "curso_id": "5",  "local_id": "12", "turma_codigo": "26/MARK 28",  "turma_label": "Quarta — 10h–16h (início 03/06/2026) — Prefeitura — Centro",                                   "dias_aula": "Quarta",             "horario": "10h–16h",      "data_inicio": "03/06/2026", "encerramento": "24/06/2026", "endereco_curso": "📍Rua Alfonso Cavalcanti, 455 – Centro"},
-    {"id": "17", "curso_id": "6",  "local_id": "13", "turma_codigo": "26/MLRE 16",  "turma_label": "Segunda e Quarta — 19h–22h (início 08/06/2026) — Salão de Festas (77) — Padre Miguel",     "dias_aula": "Segunda e Quarta",   "horario": "19h–22h",      "data_inicio": "08/06/2026", "encerramento": "01/07/2026", "endereco_curso": "📍Rua Juazeiro do Norte, 639 – Padre Miguel"},
-    {"id": "18", "curso_id": "6",  "local_id": "14", "turma_codigo": "26/MLRE 18",  "turma_label": "Terça e Quinta — 08h–12h (início 02/06/2026) — Amubua (Associação) — Santa Cruz",  "dias_aula": "Terça e Quinta",  "horario": "08h–12h",      "data_inicio": "02/06/2026", "encerramento": "25/06/2026", "endereco_curso": "📍Rua José Silton Pinheiro, 51 – Santa Cruz"},
-    {"id": "19", "curso_id": "7",  "local_id": "15", "turma_codigo": "26/OSCO 02",  "turma_label": "Segunda e Quarta — 14h–17h (início 08/06/2026) — Assoc. Amigos do Barata — Realengo",          "dias_aula": "Segunda e Quarta",   "horario": "14h–17h",      "data_inicio": "08/06/2026", "encerramento": "29/07/2026", "endereco_curso": "📍Rua Correia Teixeira, 79 (Fundos) – Realengo"},
-    {"id": "20", "curso_id": "8",  "local_id": "16", "turma_codigo": "26/PORT 01",  "turma_label": "Terça e Quinta — 19h–21h (início 26/05/2026) — AD ADTS Mandela — Benfica",                  "dias_aula": "Terça e Quinta",  "horario": "19h–21h",      "data_inicio": "26/05/2026", "encerramento": "29/06/2026", "endereco_curso": "📍Rua Leopoldo Bulhões, 800 – Benfica"},
-    {"id": "21", "curso_id": "1",  "local_id": "17", "turma_codigo": "26/ASLO 29",  "turma_label": "Sábado — 08h–12h (início 13/06/2026) — AD ADTS de Colégio — Colégio",               "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "13/06/2026", "encerramento": "04/07/2026", "endereco_curso": "📍Estrada de Colégio, 121 – CEP 21235-280"},
-    {"id": "22", "curso_id": "4",  "local_id": "10", "turma_codigo": "26/INAT 22",  "turma_label": "Sábado — 09h–13h (início 04/07/2026) — Vila do Pinheiro — Maré",                       "dias_aula": "Sábado",           "horario": "09h–13h",      "data_inicio": "04/07/2026", "encerramento": "25/07/2026", "endereco_curso": "📍Via B9, 379, BL 14 – CEP 21046-090"},
-    {"id": "23", "curso_id": "2",  "local_id": "10", "turma_codigo": "26/ADMN 43",  "turma_label": "Terça e Quinta — 08h–11h (início 29/06/2026) — Vila do Pinheiro — Maré",                "dias_aula": "Terça e Quinta",  "horario": "08h–11h",      "data_inicio": "29/06/2026", "encerramento": "16/07/2026", "endereco_curso": "📍Via B9, 379, BL 14 – CEP 21046-090"},
-    {"id": "24", "curso_id": "7",  "local_id": "15", "turma_codigo": "26/OSCO 03",  "turma_label": "Terça e Quinta — 18h–21h (início 25/06/2026) — Assoc. Amigos do Barata — Realengo",         "dias_aula": "Terça e Quinta",  "horario": "18h–21h",      "data_inicio": "25/06/2026", "encerramento": "14/07/2026", "endereco_curso": "📍Rua Correia Texeira, 79 – Fundos – Realengo"},
-    {"id": "25", "curso_id": "1",  "local_id": "18", "turma_codigo": "26/ASLO 30",  "turma_label": "Terça — 08h–12h (início 16/06/2026) — Centro Social Estrela da Manhã — Guaratiba",     "dias_aula": "Terça",            "horario": "08h–12h",      "data_inicio": "16/06/2026", "encerramento": "13/07/2026", "endereco_curso": "📍Rua Alcides Franco, 175 – CEP 23032-010"},
-    {"id": "26", "curso_id": "9",  "local_id": "18", "turma_codigo": "26/RECP 06",  "turma_label": "Terça — 17h–20h30 (início 17/06/2026) — Centro Social Estrela da Manhã — Guaratiba",  "dias_aula": "Terça",            "horario": "17h–20h30",    "data_inicio": "17/06/2026", "encerramento": "13/07/2026", "endereco_curso": "📍Rua Alcides Franco, 175 – CEP 23032-010"},
-    {"id": "27", "curso_id": "9",  "local_id": "19", "turma_codigo": "26/RECP 07",  "turma_label": "Segunda e Quarta — 09h–11h (início 17/06/2026) — Campo Socyte de Manguinhos — Manguinhos",      "dias_aula": "Segunda e Quarta",   "horario": "09h–11h",      "data_inicio": "17/06/2026", "encerramento": "13/07/2026", "endereco_curso": "📍Rua N. Sra. dos Navegantes, 3 – CEP 21.050-000"},
-    {"id": "28", "curso_id": "9",  "local_id": "20", "turma_codigo": "26/RECP 08",  "turma_label": "Terça e Quinta — 19h–21h (início 18/06/2026) — Quadra Unidos de Manguinhos — Manguinhos",   "dias_aula": "Terça e Quinta",  "horario": "19h–21h",      "data_inicio": "18/06/2026", "encerramento": "14/07/2026", "endereco_curso": "📍Av. dos Democráticos, 32 – CEP 21050-000"},
-    {"id": "29", "curso_id": "9",  "local_id": "20", "turma_codigo": "26/RECP 09",  "turma_label": "Terça e Quinta — 19h–21h (início 18/06/2026) — Quadra Unidos de Manguinhos — Manguinhos",   "dias_aula": "Terça e Quinta",  "horario": "19h–21h",      "data_inicio": "18/06/2026", "encerramento": "14/07/2026", "endereco_curso": "📍Av. dos Democráticos, 32 – CEP 21050-000"},
-    {"id": "30", "curso_id": "9",  "local_id": "19", "turma_codigo": "26/RECP 10",  "turma_label": "Segunda e Quarta — 09h–11h (início 17/06/2026) — Campo Socyte de Manguinhos — Manguinhos",      "dias_aula": "Segunda e Quarta",   "horario": "09h–11h",      "data_inicio": "17/06/2026", "encerramento": "13/07/2026", "endereco_curso": "📍Rua N. Sra. dos Navegantes, 3 – CEP 21.050-000"},
-    {"id": "31", "curso_id": "10", "local_id": "5",  "turma_codigo": "26/AGTU 04",  "turma_label": "Quarta e Sexta — 16h–18h (início 17/07/2026) — Min. Ap. Mover Profético — Senador Camará", "dias_aula": "Quarta e Sexta",    "horario": "16h–18h",      "data_inicio": "17/07/2026", "encerramento": "07/08/2026", "endereco_curso": "📍Rua Guilherme Francisco de Moraes, Lote 3 – Senador Camará"},
-    {"id": "32", "curso_id": "1",  "local_id": "5",  "turma_codigo": "26/ASLO 31",  "turma_label": "Sábado — 08h–12h (início 11/07/2026) — Min. Ap. Mover Profético — Senador Camará",  "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "11/07/2026", "encerramento": "01/08/2026", "endereco_curso": "📍Rua Guilherme Francisco de Moraes, Lote 3 – Senador Camará"},
-    {"id": "33", "curso_id": "5",  "local_id": "21", "turma_codigo": "26/MARK 31",  "turma_label": "Segunda — 18h–21h (início 15/06/2026) — Igreja Batista Ebenezer — Inhoaíba",                "dias_aula": "Segunda",            "horario": "18h–21h",      "data_inicio": "15/06/2026", "encerramento": "06/07/2026", "endereco_curso": "📍Avenida A, 2756 – CEP 23.062-000"},
-    {"id": "34", "curso_id": "11", "local_id": "22", "turma_codigo": "26/VEND 01",  "turma_label": "Sábado — 08h–12h (início 20/06/2026) — Assoc. de Moradores São Jorge — Inhoaíba",  "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "20/06/2026", "encerramento": "18/07/2026", "endereco_curso": "📍Rua Moranga, 125 – Campo Grande, Inhoaíba"},
-    {"id": "35", "curso_id": "2",  "local_id": "23", "turma_codigo": "26/ADMN 44",  "turma_label": "Segunda e Quarta — 19h–21h (início 22/06/2026) — Ig. Evangélica Pão da Vida — Curicica",  "dias_aula": "Segunda e Quarta",   "horario": "19h–21h",      "data_inicio": "22/06/2026", "encerramento": "13/07/2026", "endereco_curso": "📍Rua Mandina, 2 – CEP 22780-530 – Curicica"},
-    {"id": "36", "curso_id": "2",  "local_id": "7",  "turma_codigo": "26/ADMN 45",  "turma_label": "Segunda e Quarta — 14h–17h (início 17/06/2026) — Igreja Batista São Bento — Bangu",          "dias_aula": "Segunda e Quarta",   "horario": "14h–17h",      "data_inicio": "17/06/2026", "encerramento": "13/07/2026", "endereco_curso": "📍Rua Batuíra, 121 – CEP 21860-160"},
-    {"id": "37", "curso_id": "12", "local_id": "2",  "turma_codigo": "26/SOMD 16",  "turma_label": "Segunda — 17h30–19h30 (início 06/07/2026) — Igreja Batista Rio da Prata — Bangu",                "dias_aula": "Segunda",            "horario": "17h30–19h30",  "data_inicio": "06/07/2026", "encerramento": "27/07/2026", "endereco_curso": "📍Rua dos Limadores, 866 – CEP 21.830-005"},
-    {"id": "38", "curso_id": "12", "local_id": "9",  "turma_codigo": "26/SOMD 17",  "turma_label": "Sábado — 10h–14h (início 06/06/2026) — Reforço Escolar Tia Dani — Maré",           "dias_aula": "Sábado",           "horario": "10h–14h",      "data_inicio": "06/06/2026", "encerramento": "27/07/2026", "endereco_curso": "📍Rua Darcy Vargas, 136 – Maré"},
-    {"id": "39", "curso_id": "12", "local_id": "20", "turma_codigo": "26/SOMD 18",  "turma_label": "Segunda e Quarta — 19h–21h (início 17/06/2026) — Quadra Unidos de Manguinhos — Manguinhos",     "dias_aula": "Segunda e Quarta",   "horario": "19h–21h",      "data_inicio": "17/06/2026", "encerramento": "13/07/2026", "endereco_curso": "📍Av. dos Democráticos, 32 – CEP 21050-000"},
-    {"id": "40", "curso_id": "4",  "local_id": "11", "turma_codigo": "26/INAT 23",  "turma_label": "Terça — 18h–22h (início 07/07/2026) — Min. Ap. Tenda do Encontro — Cosmos",              "dias_aula": "Terça",            "horario": "18h–22h",      "data_inicio": "07/07/2026", "encerramento": "28/07/2026", "endereco_curso": "📍Rua Framboesa, 21 – CEP 23.061-522"},
-    {"id": "41", "curso_id": "4",  "local_id": "18", "turma_codigo": "26/INAT 24",  "turma_label": "Segunda — 17h–21h (início 15/06/2026) — Centro Social Estrela da Manhã — Guaratiba",       "dias_aula": "Segunda",            "horario": "17h–21h",      "data_inicio": "15/06/2026", "encerramento": "06/07/2026", "endereco_curso": "📍Rua Alcides Franco, 175 – CEP 23032-010"},
-    {"id": "42", "curso_id": "4",  "local_id": "19", "turma_codigo": "26/INAT 25",  "turma_label": "Segunda e Quarta — 09h–11h (início 18/06/2026) — Campo Socyte de Manguinhos — Manguinhos",      "dias_aula": "Segunda e Quarta",   "horario": "09h–11h",      "data_inicio": "18/06/2026", "encerramento": "14/07/2026", "endereco_curso": "📍Rua N. Sra. dos Navegantes, 3 – CEP 21.050-000"},
-    {"id": "43", "curso_id": "4",  "local_id": "20", "turma_codigo": "26/INAT 26",  "turma_label": "Terça e Quinta — 19h–21h (início 18/06/2026) — Quadra Unidos de Manguinhos — Manguinhos",   "dias_aula": "Terça e Quinta",  "horario": "19h–21h",      "data_inicio": "18/06/2026", "encerramento": "14/07/2026", "endereco_curso": "📍Av. dos Democráticos, 32 – CEP 21050-000"},
-    {"id": "44", "curso_id": "4",  "local_id": "20", "turma_codigo": "26/INAT 27",  "turma_label": "Terça e Quinta — 19h–21h (início 18/06/2026) — Quadra Unidos de Manguinhos — Manguinhos",   "dias_aula": "Terça e Quinta",  "horario": "19h–21h",      "data_inicio": "18/06/2026", "encerramento": "14/07/2026", "endereco_curso": "📍Av. dos Democráticos, 32 – CEP 21050-000"},
-    {"id": "45", "curso_id": "4",  "local_id": "19", "turma_codigo": "26/INAT 28",  "turma_label": "Segunda e Quarta — 09h–11h (início 18/06/2026) — Campo Socyte de Manguinhos — Manguinhos",      "dias_aula": "Segunda e Quarta",   "horario": "09h–11h",      "data_inicio": "18/06/2026", "encerramento": "14/07/2026", "endereco_curso": "📍Rua N. Sra. dos Navegantes, 3 – CEP 21.050-000"},
-    {"id": "46", "curso_id": "13", "local_id": "24", "turma_codigo": "26/BARB 02",  "turma_label": "Sábado — 08h–12h (início 15/06/2026) — AD na Pavuna — Cosmos",                              "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "15/06/2026", "encerramento": "06/07/2026", "endereco_curso": "📍Rua 9, Lote 19, Casa 2 – Cj Urucania – CEP 23059-340"},
-    {"id": "47", "curso_id": "1",  "local_id": "1",  "turma_codigo": "26/ASLO 32",  "turma_label": "Terça e Quinta — 18h–22h (início 16/06/2026) — Residencial Rio Samba — Campo Grande",       "dias_aula": "Terça e Quinta",  "horario": "18h–22h",      "data_inicio": "16/06/2026", "encerramento": "25/06/2026", "endereco_curso": "📍Rua Antonio Carlos Belchior, 200 – Campo Grande"},
-    {"id": "48", "curso_id": "1",  "local_id": "6",  "turma_codigo": "26/ASLO 33",  "turma_label": "Sábado — 09h–13h (início 11/07/2026) — Assoc. Moradores Conj. Liberdade — Santa Cruz",     "dias_aula": "Sábado",           "horario": "09h–13h",      "data_inicio": "11/07/2026", "encerramento": "11/08/2026", "endereco_curso": "📍Av. Canal Margem Direita, 54 – CEP 23560-366"},
-    {"id": "49", "curso_id": "1",  "local_id": "17", "turma_codigo": "26/ASLO 34",  "turma_label": "Sábado — 09h–11h (início 27/06/2026) — AD ADTS de Colégio — Colégio",             "dias_aula": "Sábado",           "horario": "09h–11h",      "data_inicio": "27/06/2026", "encerramento": "25/07/2026", "endereco_curso": "📍Estrada de Colégio, 121 – CEP 21235-280"},
-    {"id": "50", "curso_id": "9",  "local_id": "16", "turma_codigo": "26/RECP 11",  "turma_label": "Seg, Ter e Qui — 19h–21h (início 18/06/2026) — AD ADTS Mandela — Benfica",                        "dias_aula": "Seg, Ter e Qui",     "horario": "19h–21h",      "data_inicio": "18/06/2026", "encerramento": "30/06/2026", "endereco_curso": "📍Rua Leopoldo Bulhões, 800 – CEP 20911-300"},
-    {"id": "51", "curso_id": "4",  "local_id": "7",  "turma_codigo": "26/INAT 29",  "turma_label": "Sábado — 08h–12h (início 04/07/2026) — Igreja Batista São Bento — Bangu",              "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "04/07/2026", "encerramento": "25/07/2026", "endereco_curso": "📍Rua Batuíra, 121 – CEP 21.860-290"},
-    {"id": "52", "curso_id": "12", "local_id": "25", "turma_codigo": "26/SOMD 19",  "turma_label": "Sábado — 08h–12h (início 27/06/2026) — Ig. Batista Maanaim Mendanha — Campo Grande",       "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "27/06/2026", "encerramento": "18/07/2026", "endereco_curso": "📍Estrada do Mendanha, 4240"},
-    {"id": "53", "curso_id": "3",  "local_id": "26", "turma_codigo": "26/AXCZ 21",  "turma_label": "Sábado — 08h–12h (início 20/06/2026) — Salão de Festas — Santa Cruz",                  "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "20/06/2026", "encerramento": "11/07/2026", "endereco_curso": "📍Av. Marginal, 107 – CEP 23595-020 – Santa Cruz"},
-    {"id": "54", "curso_id": "5",  "local_id": "27", "turma_codigo": "26/MARK 32",  "turma_label": "Segunda e Quinta — 18h–22h (início 04/07/2026) — Centro Cultural Lottus — Méier",           "dias_aula": "Segunda e Quinta",   "horario": "18h–22h",      "data_inicio": "04/07/2026", "encerramento": "25/07/2026", "endereco_curso": "📍Rua Dias da Cruz, 638 – Sala 204 – CEP 20.720-013"},
-    {"id": "55", "curso_id": "13", "local_id": "28", "turma_codigo": "26/BARB 03",  "turma_label": "Sábado — 08h–12h (início 27/06/2026) — Vila Cruzeiro — Penha",                             "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "27/06/2026", "encerramento": "27/07/2026", "endereco_curso": "📍Rua Sargento Ricardo Filho, 26 – CEP 21070-170"},
-    {"id": "56", "curso_id": "2",  "local_id": "3",  "turma_codigo": "26/ADMN 46",  "turma_label": "Terça — 14h–18h (início 07/07/2026) — Associação dos Artesãos — Ana Gonzaga",   "dias_aula": "Terça",            "horario": "14h–18h",      "data_inicio": "07/07/2026", "encerramento": "28/07/2026", "endereco_curso": "📍Rua Esmeralda Ana Gonzaga QD 11 – CEP 23050-489"},
-    {"id": "57", "curso_id": "5",  "local_id": "3",  "turma_codigo": "26/MARK 33",  "turma_label": "Quarta — 08h–12h (início 08/07/2026) — Associação dos Artesãos — Ana Gonzaga",     "dias_aula": "Quarta",             "horario": "08h–12h",      "data_inicio": "08/07/2026", "encerramento": "29/07/2026", "endereco_curso": "📍Rua Esmeralda Ana Gonzaga QD 11 – CEP 23050-489"},
-    {"id": "58", "curso_id": "3",  "local_id": "3",  "turma_codigo": "26/AXCZ 22",  "turma_label": "Sábado — 14h–18h (início 04/07/2026) — Associação dos Artesãos — Ana Gonzaga",  "dias_aula": "Sábado",           "horario": "14h–18h",      "data_inicio": "04/07/2026", "encerramento": "25/07/2026", "endereco_curso": "📍Rua Esmeralda Ana Gonzaga QD 11 – CEP 23050-489"},
-    {"id": "59", "curso_id": "9",  "local_id": "29", "turma_codigo": "26/RECP 12",  "turma_label": "Sábado — 14h–18h (início 11/07/2026) — Ig. União Evangélica Pentecostal — Cosmos", "dias_aula": "Sábado",           "horario": "14h–18h",      "data_inicio": "11/07/2026", "encerramento": "01/08/2026", "endereco_curso": "📍Rua Herval Rossano LT 26 QD 16 – Cosmos"},
-    {"id": "60", "curso_id": "5",  "local_id": "13", "turma_codigo": "26/MARK 34",  "turma_label": "Segunda e Quarta — 19h–21h (início 06/07/2026) — Salão de Festas (77) — Padre Miguel",     "dias_aula": "Segunda e Quarta",   "horario": "19h–21h",      "data_inicio": "06/07/2026", "encerramento": "29/07/2026", "endereco_curso": "📍Rua Juazeiro do Norte, 639 – Padre Miguel"},
-    {"id": "61", "curso_id": "4",  "local_id": "30", "turma_codigo": "26/INAT 30",  "turma_label": "Qua, Qui e Sex — 13h30–16h (início 30/06/2026) — Tia Lu — Realengo",                             "dias_aula": "Qua, Qui e Sex",     "horario": "13h30–16h",    "data_inicio": "30/06/2026", "encerramento": "09/07/2026", "endereco_curso": "📍Rua Pedro Gomes, 2 – CEP 21715-040 – Realengo"},
-    {"id": "62", "curso_id": "4",  "local_id": "8",  "turma_codigo": "26/INAT 31",  "turma_label": "Sábado — 08h–12h (início 04/07/2026) — Ig. Metodista Embarcados C/Cristo — Campo Grande", "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "04/07/2026", "encerramento": "25/07/2026", "endereco_curso": "📍Estrada do Cabuçu, 2692 – Campo Grande"},
-    {"id": "63", "curso_id": "9",  "local_id": "3",  "turma_codigo": "26/RECP 13",  "turma_label": "Sábado — 08h–12h (início 05/07/2026) — Associação dos Artesãos — Ana Gonzaga",  "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "05/07/2026", "encerramento": "26/07/2026", "endereco_curso": "📍Rua Esmeralda Ana Gonzaga QD 11 – CEP 23050-489"},
-    {"id": "64", "curso_id": "5",  "local_id": "12", "turma_codigo": "26/MARK 35",  "turma_label": "Quarta — 10h–16h (início 02/07/2026) — Prefeitura — Centro",                                   "dias_aula": "Quarta",             "horario": "10h–16h",      "data_inicio": "02/07/2026", "encerramento": "23/07/2026", "endereco_curso": "📍Rua Afonso Cavalcanti, 455 – CEP 20211-110 – Centro"},
-    {"id": "65", "curso_id": "3",  "local_id": "29", "turma_codigo": "26/AXCZ 23",  "turma_label": "Sábado — 08h–12h (início 11/07/2026) — Ig. União Evangélica Pentecostal — Cosmos", "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "11/07/2026", "encerramento": "01/08/2026", "endereco_curso": "📍Rua Herval Rossano, 26 – Cosmos"},
-    {"id": "66", "curso_id": "3",  "local_id": "4",  "turma_codigo": "26/AXCZ 24",  "turma_label": "Sábado — 08h–12h (início 11/07/2026) — IMMEC Church — Campo Grande",                       "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "11/07/2026", "encerramento": "01/08/2026", "endereco_curso": "📍Estrada do Cabuçu, 2692 – Campo Grande"},
-    {"id": "67", "curso_id": "14", "local_id": "31", "turma_codigo": "26/GRCM 01",  "turma_label": "Segunda e Quarta — 14h–17h (início 29/06/2026) — Cozinha Comunitária — Realengo",          "dias_aula": "Segunda e Quarta",   "horario": "14h–17h",      "data_inicio": "29/06/2026", "encerramento": "15/07/2026", "endereco_curso": "📍Rua General Raposo, 41 – CEP 21730-000 – Realengo"},
-    {"id": "68", "curso_id": "2",  "local_id": "9",  "turma_codigo": "26/ADMN 47",  "turma_label": "Sábado — 10h–14h (início 11/07/2026) — Reforço Escolar Tia Dani — Maré",          "dias_aula": "Sábado",           "horario": "10h–14h",      "data_inicio": "11/07/2026", "encerramento": "01/08/2026", "endereco_curso": "📍Rua Darcy Vargas, 136 – Maré"},
-    {"id": "69", "curso_id": "2",  "local_id": "21", "turma_codigo": "26/ADMN 48",  "turma_label": "Segunda — 18h–22h (início 13/07/2026) — Igreja Batista Ebenezer — Inhoaíba",                "dias_aula": "Segunda",            "horario": "18h–22h",      "data_inicio": "13/07/2026", "encerramento": "03/08/2026", "endereco_curso": "📍Av. A, 2756 – CEP 23.062-000 – Inhoaíba"},
-    {"id": "70", "curso_id": "7",  "local_id": "32", "turma_codigo": "26/OSCO 04",  "turma_label": "Terça e Quinta — 9h–12h (início 28/07/2026) — Casa Costa Matos — Rio de Janeiro",          "dias_aula": "Terça e Quinta",  "horario": "9h–12h",       "data_inicio": "28/07/2026", "encerramento": "13/08/2026", "endereco_curso": "📍Rua Capitão Teixeira, 583 – CEP 21.755-000"},
-    {"id": "71", "curso_id": "10", "local_id": "20", "turma_codigo": "26/AGTU 01",  "turma_label": "Segunda e Quarta — 19h–21h (início 20/07/2026) — Quadra Unidos de Manguinhos — Manguinhos",     "dias_aula": "Segunda e Quarta",   "horario": "19h–21h",      "data_inicio": "20/07/2026", "encerramento": "12/08/2026", "endereco_curso": "📍Av. dos Democráticos, 32 – CEP 21050-000"},
-    {"id": "72", "curso_id": "10", "local_id": "19", "turma_codigo": "26/AGTU 02",  "turma_label": "Terça e Quinta — 9h–11h (início 20/07/2026) — Campo Socyte de Manguinhos — Manguinhos",    "dias_aula": "Terça e Quinta",  "horario": "9h–11h",       "data_inicio": "20/07/2026", "encerramento": "12/08/2026", "endereco_curso": "📍Rua N. Sra. dos Navegantes, 3 – CEP 21.050-000"},
-    {"id": "73", "curso_id": "10", "local_id": "20", "turma_codigo": "26/AGTU 03",  "turma_label": "Terça e Quinta — 19h–21h (início 21/07/2026) — Quadra Unidos de Manguinhos — Manguinhos",   "dias_aula": "Terça e Quinta",  "horario": "19h–21h",      "data_inicio": "21/07/2026", "encerramento": "13/08/2026", "endereco_curso": "📍Av. dos Democráticos, 32 – CEP 21050-000"},
-    {"id": "74", "curso_id": "10", "local_id": "19", "turma_codigo": "26/AGTU 04",  "turma_label": "Terça e Quinta — 9h–11h (início 20/07/2026) — Campo Socyte de Manguinhos — Manguinhos",    "dias_aula": "Terça e Quinta",  "horario": "9h–11h",       "data_inicio": "20/07/2026", "encerramento": "12/08/2026", "endereco_curso": "📍Rua N. Sra. dos Navegantes, 3 – CEP 21.050-000"},
-    {"id": "75", "curso_id": "9",  "local_id": "24", "turma_codigo": "26/RECP 14",  "turma_label": "Terça — 18h–22h (início 13/07/2026) — AD na Pavuna — Cosmos",                              "dias_aula": "Terça",            "horario": "18h–22h",      "data_inicio": "13/07/2026", "encerramento": "03/08/2026", "endereco_curso": "📍Rua 9, Lote 19 – Cj Urucania – CEP 23.059-340"},
-    {"id": "76", "curso_id": "5",  "local_id": "30", "turma_codigo": "26/MARK 38",  "turma_label": "Seg, Qua e Qui — 14h–16h (início 03/08/2026) — Tia Lu — Realengo",                               "dias_aula": "Seg, Qua e Qui",     "horario": "14h–16h",      "data_inicio": "03/08/2026", "encerramento": "14/08/2026", "endereco_curso": "📍Rua Pedro Gomes, 2 – Realengo – CEP 21715-040"},
-    {"id": "77", "curso_id": "3",  "local_id": "26", "turma_codigo": "26/AXCZ 25",  "turma_label": "Sábado — 08h–12h (início 18/07/2026) — Salão de Festas — Santa Cruz",                  "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "18/07/2026", "encerramento": "08/08/2026", "endereco_curso": "📍Av. Marginal, 107 – CEP 23595-020 – Santa Cruz"},
-    {"id": "78", "curso_id": "13", "local_id": "28", "turma_codigo": "26/BARB 04",  "turma_label": "Sábado — 08h–12h (início 01/08/2026) — Vila Cruzeiro — Penha",                             "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "01/08/2026", "encerramento": "22/08/2026", "endereco_curso": "📍Rua Sargento Ricardo Filho, 26 – CEP 21070-170 – Olaria"},
-    {"id": "79", "curso_id": "1",  "local_id": "3",  "turma_codigo": "26/ASLO 35",  "turma_label": "Terça — 08h–12h (início 04/08/2026) — Associação dos Artesãos — Ana Gonzaga",  "dias_aula": "Terça",            "horario": "08h–12h",      "data_inicio": "04/08/2026", "encerramento": "25/08/2026", "endereco_curso": "📍Rua Esmeralda de Ana Gonzaga – Inhoaíba – QD 11 LT 24 – CEP 23050-489"},
-    {"id": "80", "curso_id": "4",  "local_id": "3",  "turma_codigo": "26/INAT 33",  "turma_label": "Quarta — 8h–12h (início 05/08/2026) — Associação dos Artesãos — Ana Gonzaga",      "dias_aula": "Quarta",             "horario": "8h–12h",       "data_inicio": "05/08/2026", "encerramento": "26/08/2026", "endereco_curso": "📍Rua Esmeralda de Ana Gonzaga – Inhoaíba – QD 11 LT 24 – CEP 23050-489"},
-    {"id": "81", "curso_id": "3",  "local_id": "3",  "turma_codigo": "26/AXCZ 26",  "turma_label": "Sábado — 08h–12h (início 05/08/2026) — Associação dos Artesãos — Ana Gonzaga",  "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "05/08/2026", "encerramento": "26/08/2026", "endereco_curso": "📍Rua Esmeralda de Ana Gonzaga – Inhoaíba – QD 11 LT 24 – CEP 23050-489"},
-    {"id": "82", "curso_id": "11", "local_id": "23", "turma_codigo": "26/VEND 02",  "turma_label": "Segunda e Quarta — 19h30–21h30 (início 29/07/2026) — Ig. Evangélica Pão da Vida — Curicica", "dias_aula": "Segunda e Quarta",  "horario": "19h30–21h30",  "data_inicio": "29/07/2026", "encerramento": "13/08/2026", "endereco_curso": "📍Rua Mandina 2 – Curicica – CEP 22780-530"},
-    {"id": "83", "curso_id": "15", "local_id": "6",  "turma_codigo": "26/ELET 01",  "turma_label": "Sábado — 9h–13h (início 15/08/2026) — Assoc. Moradores Conj. Liberdade — Santa Cruz",      "dias_aula": "Sábado",           "horario": "9h–13h",       "data_inicio": "15/08/2026", "encerramento": "05/09/2026", "endereco_curso": "📍Av. Canal Margem Direita, 54 – CEP 23560-366 – Santa Cruz"},
-    {"id": "84", "curso_id": "2",  "local_id": "2",  "turma_codigo": "26/ADMN 50",  "turma_label": "Segunda — 17h30–21h30 (início 03/08/2026) — Igreja Batista Rio da Prata — Bangu",                "dias_aula": "Segunda",            "horario": "17h30–21h30",  "data_inicio": "03/08/2026", "encerramento": "24/08/2026", "endereco_curso": "📍Rua dos Limadores, 866 – CEP 21830-005 – Bangu"},
-    {"id": "85", "curso_id": "12", "local_id": "22", "turma_codigo": "26/SOMD 21",  "turma_label": "Sábado — 8h–12h (início 01/08/2026) — Assoc. de Moradores São Jorge — Inhoaíba",  "dias_aula": "Sábado",           "horario": "8h–12h",       "data_inicio": "01/08/2026", "encerramento": "22/08/2026", "endereco_curso": "📍Rua Pedro Autran, 71 – CEP 23059-105 – Cosmos"},
-    {"id": "86", "curso_id": "4",  "local_id": "18", "turma_codigo": "26/INAT 34",  "turma_label": "Segunda — 17h–21h (início 27/07/2026) — Centro Social Estrela da Manhã — Guaratiba",         "dias_aula": "Segunda",            "horario": "17h–21h",      "data_inicio": "27/07/2026", "encerramento": "17/08/2026", "endereco_curso": "📍Rua Alcides Franco, 175 – CEP 23032-010 – Guaratiba"},
-    {"id": "87", "curso_id": "15", "local_id": "31", "turma_codigo": "26/ELET 02",  "turma_label": "Terça e Quinta — 18h–21h (início 28/07/2026) — Cozinha Comunitária — Realengo",         "dias_aula": "Terça e Quinta",  "horario": "18h–21h",      "data_inicio": "28/07/2026", "encerramento": "20/08/2026", "endereco_curso": "📍Rua General Raposo, 41 – CEP 21730-000 – Realengo"},
-    {"id": "88", "curso_id": "15", "local_id": "17", "turma_codigo": "26/ELET 03",  "turma_label": "Sábado — 9h–12h (início 01/08/2026) — AD ADTS de Colégio — Colégio",               "dias_aula": "Sábado",           "horario": "9h–12h",       "data_inicio": "01/08/2026", "encerramento": "29/08/2026", "endereco_curso": "📍Estrada de Colégio, 121 – Colégio – CEP 21235-280"},
-    {"id": "89", "curso_id": "5",  "local_id": "12", "turma_codigo": "26/MARK 42",  "turma_label": "Quarta — 10h–16h (início 05/08/2026) — Prefeitura — Centro",                                   "dias_aula": "Quarta",             "horario": "10h–16h",      "data_inicio": "05/08/2026", "encerramento": "26/08/2026", "endereco_curso": "📍Rua Afonso Cavalcanti, 455 – Cidade Nova – CEP 20211-110"},
-    {"id": "90", "curso_id": "2",  "local_id": "13", "turma_codigo": "26/ADMN 52",  "turma_label": "Segunda e Quarta — 19h–21h (início 03/08/2026) — Salão de Festas (77) — Padre Miguel",     "dias_aula": "Segunda e Quarta",   "horario": "19h–21h",      "data_inicio": "03/08/2026", "encerramento": "28/08/2026", "endereco_curso": "📍Rua Juazeiro do Norte, 639 – Padre Miguel"},
-    {"id": "91", "curso_id": "2",  "local_id": "10", "turma_codigo": "26/ADMN 53",  "turma_label": "Terça e Quinta — A confirmar (início 28/07/2026) — Vila do Pinheiro — Maré",                 "dias_aula": "Terça e Quinta",  "horario": "A confirmar",      "data_inicio": "28/07/2026", "encerramento": "13/08/2026", "endereco_curso": "📍Via B9, 379, BL 14 – CEP 21046-090"},
-    {"id": "92", "curso_id": "14", "local_id": "18", "turma_codigo": "26/GRCM 02",  "turma_label": "A confirmar — A confirmar (início 21/07/2026) — Centro Social Estrela da Manhã — Guaratiba",    "dias_aula": "A confirmar",        "horario": "A confirmar",      "data_inicio": "21/07/2026", "encerramento": "11/08/2026", "endereco_curso": "📍Rua Alcides Franco, 175 – CEP 23032-010 – Guaratiba"},
-    {"id": "93", "curso_id": "8",  "local_id": "22", "turma_codigo": "26/PORT 02",  "turma_label": "Sexta — 17h–21h (início 31/07/2026) — Assoc. de Moradores São Jorge — Inhoaíba",       "dias_aula": "Sexta",              "horario": "17h–21h",      "data_inicio": "31/07/2026", "encerramento": "21/08/2026", "endereco_curso": "📍Rua Moranga, 125, CS 102 – Inhoaíba – CG"},
-    {"id": "94", "curso_id": "3",  "local_id": "7",  "turma_codigo": "FGM-AC-02",   "turma_label": "Sábado — 09h–12h (início 25/07/2026) — Igreja Batista São Bento — Bangu",              "dias_aula": "Sábado",           "horario": "09h–12h",      "data_inicio": "25/07/2026", "encerramento": "15/08/2026", "endereco_curso": "📍Rua Batuíra, 121 – Bangu"},
-    {"id": "95", "curso_id": "9",  "local_id": "14", "turma_codigo": "26/RECP 15",  "turma_label": "Terça e Quinta — 08h–12h (início 13/08/2026) — Amubua (Associação) — Santa Cruz",  "dias_aula": "Terça e Quinta",  "horario": "08h–12h",      "data_inicio": "13/08/2026", "encerramento": "03/09/2026", "endereco_curso": "📍Rua José Silton Pinheiro, 51 – CEP: 23.573-340 – Santa Cruz"},
-    {"id": "96", "curso_id": "10", "local_id": "5",  "turma_codigo": "26/AGTU 05",  "turma_label": "Sábado — 08h–12h (início 15/08/2026) — Min. Ap. Mover Profético — Senador Camará",  "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "15/08/2026", "encerramento": "05/09/2026", "endereco_curso": "📍R: Bom Guilherme Francisco Moraes, 3 – Senador Camará – CEP: 21833-190"},
-    # ── Novas turmas adicionadas em 10/08/2026 ─────────────────────────────
-    # INVESTIDOR DO SUCESSO — Mendanha
-    {"id": "97",  "curso_id": "16", "local_id": "25", "turma_codigo": "26/INVS 01",  "turma_label": "Sábado — 08h–12h (início 22/08/2026) — Ig. Batista Maanaim Mendanha — Campo Grande",       "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "22/08/2026", "encerramento": "26/09/2026", "endereco_curso": "📍Estrada do Mendanha, 4240 – Campo Grande"},
-    # INVESTIDOR DO SUCESSO — Igreja Batista Rio da Prata — Bangu
-    {"id": "98",  "curso_id": "16", "local_id": "2",  "turma_codigo": "26/INVS 02",  "turma_label": "Sábado — 08h–12h (início 22/08/2026) — Igreja Batista Rio da Prata — Bangu",               "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "22/08/2026", "encerramento": "26/08/2026", "endereco_curso": "📍Rua dos Limadores, 866 – Bangu – CEP 21830-005"},
-    # INVESTIDOR DO SUCESSO — Foz do Jordão — Campo Grande (22/08, enc 22/08)
-    {"id": "99",  "curso_id": "16", "local_id": "33", "turma_codigo": "26/INVS 03",  "turma_label": "Sábado — 08h–12h (início 22/08/2026) — Foz do Jordão — Campo Grande",                 "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "22/08/2026", "encerramento": "22/08/2026", "endereco_curso": "📍Rua Caminho Foz do Jordão, 28 – Campo Grande"},
-    # INVESTIDOR DO SUCESSO — Foz do Jordão — Campo Grande (22/08, enc 26/09)
-    {"id": "100", "curso_id": "16", "local_id": "33", "turma_codigo": "26/INVS 04",  "turma_label": "Sábado — 08h–12h (início 22/08/2026) — Foz do Jordão — Campo Grande",                 "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "22/08/2026", "encerramento": "26/09/2026", "endereco_curso": "📍Rua Caminho Foz do Jordão, 28 – Campo Grande"},
-    # INVESTIDOR DO SUCESSO — Col. Luis Carlos Vila — Benfica
-    {"id": "101", "curso_id": "16", "local_id": "34", "turma_codigo": "26/INVS 05",  "turma_label": "Sábado — 08h–12h (início 22/08/2026) — Col. Estadual Luiz Carlos Vila — Benfica",          "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "22/08/2026", "encerramento": "26/09/2026", "endereco_curso": "📍Av. Dom Helder Camara, 1.184 – Benfica"},
-    # INVESTIDOR DO SUCESSO — Realengo (Gal. Raposo)
-    {"id": "102", "curso_id": "16", "local_id": "35", "turma_codigo": "26/INVS 06",  "turma_label": "Sábado — 08h–12h (início 22/08/2026) — Cozinha Comunitária — Realengo",               "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "22/08/2026", "encerramento": "26/09/2026", "endereco_curso": "📍Rua General Raposo, 41 – Realengo"},
-    # INVESTIDOR DO SUCESSO — Assembléia ADAV
-    {"id": "103", "curso_id": "16", "local_id": "36", "turma_codigo": "26/INVS 07",  "turma_label": "Sábado — 08h–12h (início 22/08/2026) — Assembléia de Deus ADAV — Sen. Augusto Vasconcelos", "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "22/08/2026", "encerramento": "26/09/2026", "endereco_curso": "📍Rua Arthur Rios, 805 – Senador Augusto Vasconcelos"},
-    # INVESTIDOR DO SUCESSO — Vila do Pinheiro — Maré
-    {"id": "104", "curso_id": "16", "local_id": "10", "turma_codigo": "26/INVS 08",  "turma_label": "Sábado — 08h–12h (início 01/08/2026) — Vila do Pinheiro — Maré",                       "dias_aula": "Sábado",           "horario": "08h–12h",      "data_inicio": "01/08/2026", "encerramento": "22/08/2026", "endereco_curso": "📍Vila do Pinheiro 1 – Maré"},
-    # MONITOR DE LAZER E RECREAÇÃO — IMMEC Church
-    {"id": "105", "curso_id": "6",  "local_id": "4",  "turma_codigo": "26/MLRE 19",  "turma_label": "Sábado — 14h–18h (início 22/08/2026) — IMMEC Church — Campo Grande",                       "dias_aula": "Sábado",           "horario": "14h–18h",      "data_inicio": "22/08/2026", "encerramento": "12/09/2026", "endereco_curso": "📍Estrada do Cabuçu, 2692 – Vila Jardim – Campo Grande"},
+    {
+        "id": "1", "curso_id": "1", "local_id": "1",
+        "turma_codigo": "ALG-CAJ-01",
+        "turma_label": "Seg/Qua — 9h às 11h (início 17/08)",
+        "dias_aula": "Segunda e Quarta", "horario": "9h às 11h",
+        "data_inicio": "17/08/2026", "encerramento": "16/09/2026",
+        "endereco_id": "1",
+    },
+    {
+        "id": "2", "curso_id": "2", "local_id": "1",
+        "turma_codigo": "MKD-CAJ-01",
+        "turma_label": "Seg/Qua — 18h30 às 20h30 (início 17/08)",
+        "dias_aula": "Segunda e Quarta", "horario": "18h30 às 20h30",
+        "data_inicio": "17/08/2026", "encerramento": "16/09/2026",
+        "endereco_id": "1",
+    },
+    {
+        "id": "3", "curso_id": "3", "local_id": "1",
+        "turma_codigo": "SMD-CAJ-01",
+        "turma_label": "Ter/Qui — 9h às 11h (início 18/08)",
+        "dias_aula": "Terça e Quinta", "horario": "9h às 11h",
+        "data_inicio": "18/08/2026", "encerramento": "17/09/2026",
+        "endereco_id": "1",
+    },
+    {
+        "id": "4", "curso_id": "4", "local_id": "1",
+        "turma_codigo": "ATU-CAJ-01",
+        "turma_label": "Sábado — 8h às 12h (início 22/08)",
+        "dias_aula": "Sábado", "horario": "8h às 12h",
+        "data_inicio": "22/08/2026", "encerramento": "19/09/2026",
+        "endereco_id": "1",
+    },
 ]
 def build_course_options():
-    local_by_id  = {o["id"]: o for o in LOCAL_OPTIONS}
-    course_by_id = {o["id"]: o for o in COURSE_CATALOG}
+    local_by_id  = {opt["id"]: opt for opt in LOCAL_OPTIONS}
+    course_by_id = {opt["id"]: opt for opt in COURSE_CATALOG}
     options = []
     for t in TURMA_OPTIONS:
         local  = local_by_id[t["local_id"]]
@@ -219,8 +92,7 @@ def build_course_options():
             "id":             t["id"],
             "curso_id":       t["curso_id"],
             "local_id":       t["local_id"],
-            "turma_label":    t["turma_label"],
-            "turma_codigo":   t["turma_codigo"],
+            "turma_label":    t.get("turma_label",""),
             "local":          local["nome"],
             "curso":          course["nome"],
             "turma":          f"{t['turma_codigo']} - {course['nome']}",
@@ -228,9 +100,14 @@ def build_course_options():
             "horario":        t["horario"],
             "data_inicio":    t["data_inicio"],
             "encerramento":   t["encerramento"],
-            "endereco_curso": t["endereco_curso"],
+            "endereco_curso": ADDRESS_OPTIONS[t["endereco_id"]],
         })
     return options
+COURSE_OPTIONS       = build_course_options()
+COURSE_OPTIONS_BY_ID = {opt["id"]: opt for opt in COURSE_OPTIONS}
+COURSE_CATALOG_BY_ID = {opt["id"]: opt for opt in COURSE_CATALOG}
+LOCAL_OPTIONS_BY_ID  = {opt["id"]: opt for opt in LOCAL_OPTIONS}
+COURSE_INFO          = COURSE_OPTIONS[0] if COURSE_OPTIONS else None
 def build_whatsapp_share_url(home_url):
     message = ("Acabei de me inscrever em uma oportunidade de qualificacao profissional. Confira aqui: " + home_url)
     return f"https://wa.me/?text={quote(message)}"
@@ -253,21 +130,23 @@ def fill_form_data_from_option(form_data, option):
 
 def fill_form_data_from_selection(form_data):
     opcao_id = form_data.get("opcao_id")
-    local_id = form_data.get("local_id")
     curso_id = form_data.get("curso_id")
     if opcao_id:
         matched = COURSE_OPTIONS_BY_ID.get(str(opcao_id))
         if matched:
             fill_form_data_from_option(form_data, matched)
             return
-    if local_id and curso_id:
-        matched = next((o for o in COURSE_OPTIONS if o["local_id"]==str(local_id) and o["curso_id"]==str(curso_id)),None)
+    if curso_id:
+        matched = next(
+            (o for o in COURSE_OPTIONS if o["curso_id"] == str(curso_id)),
+            None,
+        )
         if matched:
             fill_form_data_from_option(form_data, matched)
             return
-    for key in ("local","curso","turma","dias_aula","horario","data_inicio","encerramento","endereco_curso","opcao_id"):
+    for key in ("local", "curso", "turma", "dias_aula", "horario",
+                "data_inicio", "encerramento", "endereco_curso", "opcao_id"):
         form_data.setdefault(key, "")
-
 
 TEMPLATE_WIZARD = r"""<!DOCTYPE html>
 <html lang="pt-br">
