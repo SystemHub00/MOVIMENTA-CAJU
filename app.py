@@ -4,13 +4,9 @@ import traceback
 import uuid
 from datetime import datetime
 from urllib.parse import quote
-
 import requests
 from flask import Flask, redirect, render_template_string, request, session, url_for
-
 from gsheet_utils import append_to_sheet
-
-
 ALLOWED_EMAIL_PATTERN = re.compile(
     r"^[a-zA-Z0-9_.+-]+@((gmail|hotmail|outlook|yahoo)\.(com|com\.br))$",
     re.IGNORECASE,
@@ -27,57 +23,40 @@ VALID_DDDS = {
     "81","82","83","84","85","86","87","88","89",
     "91","92","93","94","95","96","97","98","99",
 }
-
 LOCAL_OPTIONS = [
-    {"id": "1", "nome": "CAJU — SALA 01"},
+    {"id": "1", "nome": "CAJU \u2014 SALA 01"},
 ]
-
 COURSE_CATALOG = [
-    {"id": "1", "nome": "ASSISTENTE DE LOGÍSTICA"},
+    {"id": "1", "nome": "ASSISTENTE DE LOG\u00cdSTICA"},
     {"id": "2", "nome": "MARKETING DIGITAL"},
     {"id": "3", "nome": "SOCIAL MEDIA"},
-    {"id": "4", "nome": "AUXILIAR ADMINISTRATIVO"},
 ]
-
 ADDRESS_OPTIONS = {
-    "1": "Rua Capit\u00e3o Carlos, n\u00b0 311 - Bonsucesso (Instituto Escrevendo o Futuro da Mar\u00e9)",
-}
-
-
-ADDRESS_OPTIONS = {
-    "1": "📍Igreja Pentecostal Da Glória De Deus - Rua Carlos Seidl, nº 1306 - Caju (Em Frente A Praça da Ladeira dos Funcionários).",
+    "1": "\U0001f4cdIgreja Pentecostal Da Gl\u00f3ria De Deus - Rua Carlos Seidl, n\u00ba 1306 - Caju (Em Frente A Pra\u00e7a da Ladeira dos Funcion\u00e1rios).",
 }
 TURMA_OPTIONS = [
     {
         "id": "1", "curso_id": "1", "local_id": "1",
         "turma_codigo": "ALG-CAJ-01",
-        "turma_label": "Seg/Qua — 9h às 11h (início 17/08)",
-        "dias_aula": "Segunda e Quarta", "horario": "9h às 11h",
+        "turma_label": "Seg/Qua \u2014 9h \u00e0s 11h (in\u00edcio 17/08)",
+        "dias_aula": "Segunda e Quarta", "horario": "9h \u00e0s 11h",
         "data_inicio": "17/08/2026", "encerramento": "16/09/2026",
         "endereco_id": "1",
     },
     {
         "id": "2", "curso_id": "2", "local_id": "1",
         "turma_codigo": "MKD-CAJ-01",
-        "turma_label": "Seg/Qua — 18h30 às 20h30 (início 17/08)",
-        "dias_aula": "Segunda e Quarta", "horario": "18h30 às 20h30",
+        "turma_label": "Seg/Qua \u2014 18h30 \u00e0s 20h30 (in\u00edcio 17/08)",
+        "dias_aula": "Segunda e Quarta", "horario": "18h30 \u00e0s 20h30",
         "data_inicio": "17/08/2026", "encerramento": "16/09/2026",
         "endereco_id": "1",
     },
     {
         "id": "3", "curso_id": "3", "local_id": "1",
         "turma_codigo": "SMD-CAJ-01",
-        "turma_label": "Ter/Qui — 9h às 11h (início 18/08)",
-        "dias_aula": "Terça e Quinta", "horario": "9h às 11h",
+        "turma_label": "Ter/Qui \u2014 9h \u00e0s 11h (in\u00edcio 18/08)",
+        "dias_aula": "Ter\u00e7a e Quinta", "horario": "9h \u00e0s 11h",
         "data_inicio": "18/08/2026", "encerramento": "17/09/2026",
-        "endereco_id": "1",
-    },
-    {
-        "id": "4", "curso_id": "4", "local_id": "1",
-        "turma_codigo": "ATU-CAJ-01",
-        "turma_label": "Sábado — 8h às 12h (início 22/08)",
-        "dias_aula": "Sábado", "horario": "8h às 12h",
-        "data_inicio": "22/08/2026", "encerramento": "19/09/2026",
         "endereco_id": "1",
     },
 ]
@@ -111,10 +90,8 @@ COURSE_INFO          = COURSE_OPTIONS[0] if COURSE_OPTIONS else None
 def build_whatsapp_share_url(home_url):
     message = ("Acabei de me inscrever em uma oportunidade de qualificacao profissional. Confira aqui: " + home_url)
     return f"https://wa.me/?text={quote(message)}"
-
 def get_course_option(option_id):
     return COURSE_OPTIONS_BY_ID.get(str(option_id or ""))
-
 def fill_form_data_from_option(form_data, option):
     form_data["local_id"]       = option["local_id"]
     form_data["curso_id"]       = option["curso_id"]
@@ -127,7 +104,6 @@ def fill_form_data_from_option(form_data, option):
     form_data["data_inicio"]    = option["data_inicio"]
     form_data["encerramento"]   = option["encerramento"]
     form_data["endereco_curso"] = option["endereco_curso"]
-
 def fill_form_data_from_selection(form_data):
     opcao_id = form_data.get("opcao_id")
     curso_id = form_data.get("curso_id")
@@ -148,7 +124,8 @@ def fill_form_data_from_selection(form_data):
                 "data_inicio", "encerramento", "endereco_curso", "opcao_id"):
         form_data.setdefault(key, "")
 
-TEMPLATE_WIZARD = r"""<!DOCTYPE html>
+TEMPLATE_WIZARD = r"""
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -297,7 +274,6 @@ TEMPLATE_WIZARD = r"""<!DOCTYPE html>
         </div>
         <div class="wizard-shell">
             <form id="wizard-form" method="POST" action="{{ url_for('inscricao_unica') }}" autocomplete="off" novalidate>
-
                 <!-- PASSO 1 -->
                 <section class="wizard-panel" data-step="index">
                     <div class="hero-grid"><div class="hero-card">
@@ -307,11 +283,9 @@ TEMPLATE_WIZARD = r"""<!DOCTYPE html>
                         <div class="hero-highlights">
                             <div class="hero-highlight" style="text-align:left;">
                                 <strong style="display:block;text-align:center;">CURSOS DISPON&#205;VEIS:</strong>
-                                &#129302; INTELIG&#202;NCIA ARTIFICIAL<br>
-                                &#128218; GERENCIAMENTO DE TR&#193;FEGO PAGO<br>
+                                &#128218; ASSISTENTE DE LOG&#205;STICA<br>
                                 &#128241; MARKETING DIGITAL<br>
-                                &#128218; SOCIAL MEDIA<br>
-                                &#128194; AUXILIAR ADMINISTRATIVO
+                                &#128218; SOCIAL MEDIA
                             </div>
                             <div class="hero-highlight">
                                 <strong>BENEF&#205;CIOS</strong>
@@ -338,7 +312,6 @@ TEMPLATE_WIZARD = r"""<!DOCTYPE html>
                         </div>
                     </div></div>
                 </section>
-
                 <!-- PASSO 2 -->
                 <section class="wizard-panel" data-step="dados">
                     <div class="step-card">
@@ -359,7 +332,6 @@ TEMPLATE_WIZARD = r"""<!DOCTYPE html>
                         </div>
                     </div>
                 </section>
-
                 <!-- PASSO 3 -->
                 <section class="wizard-panel" data-step="escolher">
                     <div class="step-card">
@@ -386,7 +358,6 @@ TEMPLATE_WIZARD = r"""<!DOCTYPE html>
                         </div>
                     </div>
                 </section>
-
                 <!-- PASSO 4 -->
                 <section class="wizard-panel" data-step="revisao">
                     <div class="step-card">
@@ -457,7 +428,7 @@ TEMPLATE_WIZARD = r"""<!DOCTYPE html>
             courseSelect.addEventListener('change',function(){setError('curso_id','');var c=courseSelect.value;if(c){atualizarLocaisPorCurso(c,'','');}else{localGroup.style.display='none';turmaGroup.style.display='none';aplicarOpcao('');}syncReview();});
             localSelectEl.addEventListener('change',function(){setError('local_id','');var l=localSelectEl.value;if(l&&courseSelect.value){atualizarHorariosPorLocal(courseSelect.value,l,'');}else{turmaGroup.style.display='none';aplicarOpcao('');}syncReview();});
             opcaoSelectEl.addEventListener('change',function(){setError('opcao_id','');aplicarOpcao(opcaoSelectEl.value);});
-            if(btnCopiarEndereco&&enderecoInput){btnCopiarEndereco.addEventListener('click',function(){navigator.clipboard.writeText(enderecoInput.value).then(function(){btnCopiarEndereco.textContent='COPIADO \u2705';}).catch(function(){enderecoInput.select();document.execCommand('copy');btnCopiarEndereco.textContent='COPIADO \u2705';});setTimeout(function(){btnCopiarEndereco.textContent='COPIAR 📋';},1200);});}
+            if(btnCopiarEndereco&&enderecoInput){btnCopiarEndereco.addEventListener('click',function(){navigator.clipboard.writeText(enderecoInput.value).then(function(){btnCopiarEndereco.textContent='COPIADO \u2705';}).catch(function(){enderecoInput.select();document.execCommand('copy');btnCopiarEndereco.textContent='COPIADO \u2705';});setTimeout(function(){btnCopiarEndereco.textContent='COPIAR \uD83D\uDCCB';},1200);});}
             function mostrarPasso(step){panels.forEach(function(p){p.classList.toggle('ativo',p.dataset.step===step);});labels.forEach(function(l){l.classList.toggle('ativo',l.dataset.stepLabel===step);});fill.style.width=(progressByStep[step]||25)+'%';window.scrollTo({top:0,behavior:'smooth'});}
             function syncReview(){reviewTargets.forEach(function(t){var key=t.dataset.review;if(key==='curso_nome'){t.textContent=cursoInput?cursoInput.value.trim():'';return;}if(key==='local_nome'){t.textContent=localInput?localInput.value.trim():'';return;}var f=document.getElementById(key);if(!f){t.textContent='';return;}if(f.tagName==='SELECT'){var s=f.options[f.selectedIndex];t.textContent=s?s.text.trim():'';}else{t.textContent=f.value.trim();}});}
             function validarCPF(cpf){var d=somenteDigitos(cpf);if(d.length!==11||/^(\d)\1+$/.test(d))return false;var s=0,g;for(var i=0;i<9;i++)s+=Number(d[i])*(10-i);g=(s*10)%11;if(g===10)g=0;if(g!==Number(d[9]))return false;s=0;for(var i=0;i<10;i++)s+=Number(d[i])*(11-i);g=(s*10)%11;if(g===10)g=0;return g===Number(d[10]);}
@@ -505,8 +476,8 @@ TEMPLATE_WIZARD = r"""<!DOCTYPE html>
 </html>
 """
 
-
-TEMPLATE_CONFIRMACAO = r"""<!DOCTYPE html>
+TEMPLATE_CONFIRMACAO = r"""
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -600,7 +571,6 @@ TEMPLATE_CONFIRMACAO = r"""<!DOCTYPE html>
 # =============================================================================
 app = Flask(__name__)
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", "chave-secreta-para-sessao")
-
 def get_default_form_data(source=None):
     form_data = {
         "nome":"","genero":"","cpf":"","nascimento":"",
@@ -620,7 +590,6 @@ def get_default_form_data(source=None):
                 form_data[key] = (value or "").strip()
         fill_form_data_from_selection(form_data)
     return form_data
-
 def cpf_valido(cpf):
     digits = re.sub(r"\D", "", cpf or "")
     if len(digits) != 11 or len(set(digits)) == 1: return False
@@ -630,20 +599,17 @@ def cpf_valido(cpf):
     total = sum(int(digits[i]) * (11 - i) for i in range(10))
     digit = (total * 10) % 11; digit = 0 if digit == 10 else digit
     return digit == int(digits[10])
-
 def idade_aceita(nascimento):
     try: dn = datetime.strptime(nascimento, "%d/%m/%Y")
     except ValueError: return False
     hoje = datetime.today(); idade = hoje.year - dn.year
     if (hoje.month, hoje.day) < (dn.month, dn.day): idade -= 1
     return 16 <= idade <= 90
-
 def whatsapp_valido(whatsapp):
     digits = re.sub(r"\D", "", whatsapp or "")
     if len(digits) != 11: return False
     if not re.fullmatch(r"\(\d{2}\) \d{5}-\d{4}", whatsapp or ""): return False
     return digits[:2] in VALID_DDDS
-
 def validate_form_data(form_data):
     errors = {}
     selected_curso  = form_data.get("curso_id")
@@ -671,12 +637,10 @@ def validate_form_data(form_data):
     if form_data["confirma_dados"] != "sim":
         errors["confirma_dados"] = "Confirme os dados para finalizar a inscri\u00e7\u00e3o."
     return errors
-
 def error_step(errors):
     if "confirma_dados" in errors: return "revisao"
     if "curso_id" in errors: return "escolher"
     return "dados"
-
 def render_wizard(form_data=None, errors=None, current_step="index"):
     current_form_data = form_data or get_default_form_data()
     selected_option = get_course_option(current_form_data.get("opcao_id")) or COURSE_INFO
@@ -691,10 +655,8 @@ def render_wizard(form_data=None, errors=None, current_step="index"):
         form_data      = current_form_data,
         generos        = ["Feminino","Masculino","Outro","Prefiro n\u00e3o dizer"],
     )
-
 @app.route("/", methods=["GET"])
 def home(): return render_wizard()
-
 @app.route("/inscricao", methods=["GET","POST"])
 def inscricao_unica():
     if request.method == "GET": return redirect(url_for("home"))
@@ -719,12 +681,10 @@ def inscricao_unica():
         print("Supabase:", response.status_code)
     except Exception as exc: print("Erro Supabase:", exc)
     return redirect(url_for("confirmacao", protocolo=protocolo))
-
 @app.route("/curso",   methods=["GET","POST"])
 @app.route("/revisao", methods=["GET","POST"])
 @app.route("/wizard",  methods=["GET"])
 def legacy_routes(): return redirect(url_for("home"))
-
 @app.route("/confirmacao", methods=["GET"])
 @app.route("/confirmacao/<protocolo>", methods=["GET"])
 def confirmacao(protocolo=None):
@@ -737,7 +697,6 @@ def confirmacao(protocolo=None):
         protocolo          = protocolo,
         whatsapp_share_url = build_whatsapp_share_url(home_url),
     )
-
 # =============================================================================
 # SUPABASE
 # =============================================================================
@@ -746,11 +705,9 @@ SUPABASE_FUNCTION_URL = os.environ.get(
     "https://egpyhfzatabyftwajoad.supabase.co/functions/v1/fgm-register",
 )
 SUPABASE_API_KEY = os.environ.get("SUPABASE_API_KEY", "jyUskwXkc54ZcMPyADLFN6LvZO0I60e3")
-
 def normalize_phone_number(phone):
     digits = re.sub(r"[^\d]", "", phone or "")
     return f"55{digits}" if len(digits) == 11 else digits
-
 def send_registration_to_supabase(form_data):
     phone   = normalize_phone_number(form_data.get("whatsapp",""))
     endereco = form_data.get("endereco_curso","").lstrip("\U0001f4cd\U0001f4cc ").strip()
@@ -778,7 +735,6 @@ def send_registration_to_supabase(form_data):
     if not response.ok:
         raise RuntimeError(f"Supabase retornou {response.status_code}: {response.text[:500]}")
     return response
-
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
